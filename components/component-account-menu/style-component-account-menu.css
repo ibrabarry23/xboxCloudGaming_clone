@@ -4,20 +4,65 @@
     box-sizing: border-box;
 }
 
-  nav li.circle a {
-    display: block;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    border-radius: 50%;
+  /* Nascondi il menu inizialmente */
+  #menu {
+    display: none;
+  }
+  
+  /* Applica uno stile al pulsante che mostrerà il menu */
+  #menu-btn {
     background-color: gray;
-    color: #fff;
+    border-radius: 100%;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
   }
   
-  @media (min-width: 768px) {
-    nav li.circle {
-      display: none;
-    }
+  /* Quando si passa il mouse sul pulsante, cambia lo stile */
+  #menu-btn:hover {
+    background-color:grey;
   }
   
+  /* Quando si preme il pulsante, mostra il menu */
+  #menu-btn:focus + #menu {
+    display: block;
+  }
+  
+  /* Applica uno stile al menu */
+  #menu {
+    position: absolute;
+    background-color: gray;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  /* Applica uno stile alle voci del menu */
+  #menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Quando si passa il mouse sulle voci del menu, cambia lo stile */
+  #menu a:hover {
+    background-color: #ddd;
+  }
+
+  button {
+    float: right;
+  }
+
+  #Accesso {
+    float: none;
+    width: 50%;
+    margin:auto;
+  }
+ 
