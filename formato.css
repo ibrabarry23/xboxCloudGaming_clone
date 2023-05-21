@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:0;
+}
+
+#xboxcloudgaming:hover{
+    background-color:lightgray;
+}
+
+#pulsantesimone{
+    background-color: green;
+}
+
+
+#xboxcloudgaming{
+    border: none;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    width: 159px;
+    height: 40px;
+    padding: 0px 8px;
+    background-color: transparent;           /* mettere transparent */
+    text-shadow: normal;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+#beta{
+    font-weight: bolder;
+    border-radius: 3px;
+    padding: 3.5px;
+    margin-left: 4px;
+    font-size: 9px;
+    background-color:  white;
+    color: rgb(150, 148, 148);
+    font-family: 'Roboto', sans-serif;
+}
