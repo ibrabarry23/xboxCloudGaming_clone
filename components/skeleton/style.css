@@ -1,1 +1,24 @@
- /* put code here *_* */
+button {
+    background-color: transparent;
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+    text-align: center;
+}
+
+button:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+    line-height: 21px;
+}
