@@ -22,13 +22,13 @@ body{
     text-align: center;
 }
 
-form{
+.structure{
     border-radius: 35px;
     position: relative;
     height: 48px;
     text-align: center;
 }
-input{
+.bar{
     background-color: rgb(24, 24, 24);
     align-items: center;
     width: 100%;
@@ -37,24 +37,24 @@ input{
     padding: 8px 40px 8px 45px;
     border: 1px solid lightgrey;
     transition: box-shadow 0.3s;
-    color: rgb(227, 213, 213);
+    color: rgba(227, 213, 213, 0.547);
     font-size: 16px;
     line-height: 5px;
 
 
 }
-input:focus{
+.bar:focus{
     outline: none;
     box-shadow: 0 0 5px 2px white;
 
 }
-input::placeholder {
+.bar::placeholder {
     color: rgba(227, 213, 213, 0.419);
     padding-left: 4px;
-
   }
+  
 
-button{
+  .search{
     position: absolute;
     left: 0;
     width: 50px;
@@ -65,7 +65,7 @@ button{
     padding-left: 10px;
     
 }
-img{
+.Icon-search{
     height: 23px;
     width: 23px;
 }
