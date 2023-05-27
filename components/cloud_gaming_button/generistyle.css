@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.cardindie{
+    position:relative;
+    top:10px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 7px;
+    width: 150px;
+    height: 80px;
+    background-color: rgb(3, 173, 3);
+
+}
+
+.cardindie:hover{
+    background-color: rgb(0, 212, 0);
+}
+
+
+.Indie{
+    font-size: medium;
+    position: absolute;
+    bottom: 1px;
+    color:white;
+}
+
+.light{
+    height: 40px;
+    margin-left: 96px;
+}
