@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .cards-Header {
+    display: flex;
+    background-image: url('/assets/apps.31077.70804610839547354.8da93c46-fd13-4b16-8ebe-e8e02c53d93e.jpeg');
+    background-size: cover;
+    margin: 1rem;
+    height: 309px;
+    width: 551px;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    position: relative;
+    border: none;
+  } 
+  
+  /* .cards-Header:hover {
+    background-color: rgba(223, 223, 223, 0.736);
+    cursor: pointer; 
+  }
+   */
+  .gamepass-button {
+    background-color: white;
+    height: 30px;
+    width: 60px;
+    border: none;
+    border-radius: 2px; 
+  }
+  
+  .cards-Header-element {
+    position: absolute;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    bottom: 1px;
+    gap: 0.2rem;
+  }
+  
+  .cards-header-title {
+    color: white;
+  }
+  
+  .cards-header-description {
+    color: white;
+  }
+  
