@@ -4,16 +4,17 @@
     box-sizing:0;
 }
 
-#xboxcloudgaming:hover{
+.button:hover{
     background-color:lightgray;
 }
 
-#pulsantesimone{
+.colorbutton{
+    width: 160px;
     background-color: green;
 }
 
 
-#xboxcloudgaming{
+.button{
     border: none;
     color: white;
     display: inline-flex;
@@ -27,7 +28,7 @@
    
 }
 
-#beta{
+.beta{
     font-weight: bolder;
     border-radius: 3px;
     padding: 3.5px;
