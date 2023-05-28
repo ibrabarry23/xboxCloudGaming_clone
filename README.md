@@ -11,3 +11,7 @@ The project consists of the realization of the graphical interface of the **xbox
 https://trello.com/c/4HQRc3HH/3-cosa-scrivere-nel-readme
 
 #First step ![Alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/ibrahimatelybarry/Desktop/workFolder/Bootcamp/progetti/xboxCloudGaming_clone/assets/CloudGaming_LetterBox.scale-200.ef909bf4.png)
+
+https://heroicons.com/ù
+https://icons8.com/icons
+https://www.flaticon.com/
