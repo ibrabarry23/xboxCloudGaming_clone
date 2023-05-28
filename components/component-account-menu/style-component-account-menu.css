@@ -4,13 +4,11 @@
     box-sizing: border-box;
 }
 
-  /* Nascondi il menu inizialmente */
-  #menu {
+  .menu {
     display: none;
   }
   
-  /* Applica uno stile al pulsante che mostrerà il menu */
-  #menu-btn {
+  .menu-btn {
     background-color: gray;
     border-radius: 100%;
     color: black;
@@ -60,7 +58,7 @@
     float: right;
   }
 
-  #Accesso {
+  .Enter_button {
     float: none;
     width: 50%;
     margin:auto;
