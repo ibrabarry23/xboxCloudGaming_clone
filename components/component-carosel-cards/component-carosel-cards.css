@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title_bar {
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+}
+
+.link_reference {
+    background-color: gray;
+    display: flex;
+    justify-content: end;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .carousel-item {
+    flex: 100%;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
