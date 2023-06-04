@@ -1,0 +1,37 @@
+.cards {
+  &__Header {
+    display: flex;
+    background-image: url("/assets/apps.31077.70804610839547354.8da93c46-fd13-4b16-8ebe-e8e02c53d93e.jpeg");
+    background-size: cover;
+    margin: 1rem;
+    min-height: 309px;
+    min-width: 551px;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    position: relative;
+    border: none;
+  }
+
+  &__element{
+    position: absolute;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    bottom: 1px;
+    gap: 0.2rem;
+  }
+
+  &__button{
+    background-color: white;
+    height: 30px;
+    width: 60px;
+    border: none;
+    border-radius: 2px;
+  }
+
+  &__title, &__description {
+    color: white;
+  }
+
+}
+
