@@ -1,5 +1,12 @@
+header {
+  display: flex;
+  justify-content: end;
+}
+
 .searchbar {
-  width: 60%;
+  display: flex;
+  justify-content: e;
+  max-width: 60%;
   max-width: 330px;
   text-align: center;
 }
@@ -15,6 +22,7 @@
   min-width: 100%;
   min-height: 100%;
   border-radius: 35px;
+  padding: 8px 40px 8px 45px;
   border: 1px solid lightgrey;
   transition: box-shadow 0.3s;
   color: rgba(227, 213, 213, 0.547);
@@ -35,6 +43,8 @@
 .searchbar__search {
   position: absolute;
   right: 0;
+  max-width: 50px;
+  max-height: 100%;
   border: none;
   background: none;
   line-height: 15px;
