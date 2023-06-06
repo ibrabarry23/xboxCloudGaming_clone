@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+.description > h4 {
+  padding-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+  padding-left: 95px;
+}
+.description .description-big-box {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  background-color: #2d3036;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.description .description-big-box .description-big-box-p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding-left: 15px;
+}
+.description .description-big-box .description-big-box-p #details {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: white;
+  padding-left: 15px;
+}
+.description .description-big-box .description-big-box-side {
+  display: flex;
+  gap: 30px;
+  font-family: "Roboto", sans-serif;
+  justify-content: space-between;
+  padding-bottom: 125px;
+}
+.description .description-big-box .description-big-box-image {
+  max-width: 140px;
+  height: auto;
+  border-radius: 5px;
+}
+.description .description-big-box .description-big-box-imageimg {
+  max-width: 140px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.description-big-box-side-titles > h4, p {
+  padding-left: 15px;
+  font-size: bold;
+  color: white;
+}
+
+.description-top > h4 {
+  font-weight: bold;
+  color: white;
+}
+
+.top-descr {
+  display: flex;
+  justify-content: center;
+}
+
+.functionality-e-accessibility-boxes {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+}
+.functionality-e-accessibility-boxes .card-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.functionality-e-accessibility-boxes .card-box > h4 {
+  padding-right: 65%;
+  padding-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+}
+.functionality-e-accessibility-boxes .card-box .functionality-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
+  background-color: #2d3036;
+  padding-bottom: 80px;
+}
+.functionality-e-accessibility-boxes .card-box .functionality-boxes > button {
+  display: inline-block;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  width: auto;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #b6b7b9;
+  border-radius: 13px;
+  margin-left: 7px;
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
