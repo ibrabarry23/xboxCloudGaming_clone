@@ -1,0 +1,10 @@
+.footer__list {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__list__item {
+    list-style: none;
+    color: white;
+}
