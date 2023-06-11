@@ -1,0 +1,140 @@
+body {
+    overflow: hidden;
+  }
+  
+  .menu {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding-left: 48px;
+    display: flex;
+    justify-content: space-around;
+
+  
+    &__left {
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+
+    
+    }
+  
+    &__button {
+      background-color: transparent;
+      min-width: 46px;
+      min-height: 46px;
+      align-items: center;
+      border: none;
+      border-radius: 50%;
+      padding: 0;
+      text-align: center;
+      margin-right: 38px;
+    }
+    &__button:hover{
+        background-color: grey;
+        cursor: pointer;
+    }
+    &__cloudgamingbtn{
+        width: 160px;
+        color: white;
+       background-color: transparent;
+       border:none; 
+       align-items: center;
+       font-size: 10px;
+       margin-right: 12rem;
+    }
+ 
+    &__logo {
+      display: flex;
+   
+      background-color: transparent;
+      max-width: 56px;
+      max-height: 56px;
+    }
+    &__right{
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    &__signinbutton{
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 248px;
+            height: 40px;
+            background-color: #008746;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            border-radius: 2px;
+
+            color: white;
+        }
+        &__searchbar{
+            width: 60%;
+            text-align: center;
+        }
+        
+        &__structure{
+            border-radius: 35px;
+            position: relative;
+            height: 48px;
+            text-align: center;
+        }
+        &__bar{
+            background-color: rgb(24, 24, 24);
+            align-items: center;
+            width: 90%;
+            height: 100%;
+            border-radius: 35px;
+            padding: 8px 40px 8px 45px;
+            border: 1px solid lightgrey;
+            transition: box-shadow 0.3s;
+            color: rgba(227, 213, 213, 0.547);
+            font-size: 16px;
+            line-height: 5px;
+        
+        
+        }
+        &__bar:focus{
+            outline: none;
+            box-shadow: 0 0 5px 2px white;
+        
+        }
+        &__bar::placeholder {
+            color: rgba(227, 213, 213, 0.419);
+            padding-left: 4px;
+          }
+          
+        
+          &__search{
+            position: absolute;
+            left: 0;
+            min-width: 5px;
+            height: 5px;
+            border: none;
+            background: none;
+            padding-left: 25px;
+            padding-top: 0.8rem;
+            
+        }
+        &__Icon-search{
+            height: 25px;
+            align-items: center;
+            min-width: 25px;
+        }
+
+        &__profilebutton{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            background-color: #484e58;
+        }
+
+  }
+  
