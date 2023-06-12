@@ -1,0 +1,677 @@
+.container {
+  background-image: url("./assets/lego.jpeg");
+  margin-bottom: 1rem;
+  background-repeat: no-repeat;
+  // background-color: black;
+  // opacity: 0.;
+  height: 80vh;
+}
+body {
+  overflow: hidden;
+
+//   overflow: scroll;
+  // background-image: url("./assets/lego.jpeg");
+  // background-size: 100% 100% 1%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.menu {
+  width: 100%;
+  padding-left: 48px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1.5rem;
+  &__left {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    background-color: transparent;
+    min-width: 46px;
+    min-height: 46px;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    text-align: center;
+  }
+  &__button:hover {
+    background-color: grey;
+    cursor: pointer;
+  }
+  &__cloudgamingbtn {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 160px;
+    max-height: 40px;
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    margin-right: 20rem;
+  }
+  &__cloudgamingbtn:hover {
+    background-color: grey;
+    border-radius: 5px;
+  }
+
+  &__logo {
+    display: flex;
+
+    background-color: transparent;
+    max-width: 56px;
+    max-height: 56px;
+  }
+  &__right {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__searchbar {
+    width: 70%;
+    text-align: center;
+  }
+
+  &__structure {
+    border-radius: 35px;
+    position: relative;
+    height: 48px;
+    text-align: center;
+  }
+  &__bar {
+    background-color: rgb(24, 24, 24);
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    border-radius: 35px;
+    padding: 8px 40px 8px 45px;
+    border: 1px solid lightgrey;
+    transition: box-shadow 0.3s;
+    color: rgba(227, 213, 213, 0.547);
+    font-size: 16px;
+    line-height: 5px;
+  }
+  &__bar:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px white;
+  }
+  &__bar::placeholder {
+    color: rgba(227, 213, 213, 0.419);
+    padding-left: 4px;
+  }
+
+  &__search {
+    position: absolute;
+    left: 0;
+    min-width: 5px;
+    height: 5px;
+    border: none;
+    background: none;
+    padding-left: 25px;
+    padding-top: 0.4rem;
+  }
+  &__Icon-search {
+    align-items: center;
+    min-width: 20px;
+  }
+
+  &__profilebutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #484e58;
+  }
+}
+
+.background {
+  display: flex;
+  margin-left: 5rem;
+  margin-top: 16rem;
+  color: white;
+  max-width: 600px;
+  font-family: "Roboto", sans-serif;
+  &__prod {
+    color: rgba(255, 255, 255, 0.527);
+    font-size: 22px;
+  }
+  &__gamepass {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__pass {
+    width: 120px;
+  }
+  &__signin {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__signinbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 248px;
+    height: 40px;
+    background-color: #008746;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+
+    color: white;
+  }
+  &__cart {
+    background-color: rgb(184, 178, 178);
+    border: none;
+    border-radius: 0.2rem;
+    width: 100px;
+  }
+  .backgroung__img {
+    height: 35px;
+  }
+}
+
+.descrizione {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin-left: 7rem;
+  margin-top: 5rem;
+}
+.content {
+  display: flex;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  justify-content: center;
+
+  &__card {
+    height: 100px;
+    width: 200px;
+  }
+  &__imgCard {
+    height: 250px;
+    width: 180px;
+    border-radius: 0.5rem;
+    margin-left: 1.2rem;
+  }
+  &__desc {
+    display: flex;
+    width: 1093px;
+    min-height: 250px;
+    background-color: rgb(56, 54, 54);
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    gap: 5rem;
+  }
+
+  &__descrizione1 {
+    color: white;
+    max-width: 300px;
+  }
+  &__info {
+    margin-top: 1rem;
+  }
+  &__ulteriori {
+    margin-top: 1rem;
+  }
+}
+.funzionalità {
+  display: flex;
+  margin-top: 2rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  flex-direction: column;
+  flex-wrap: wrap;
+    & h2{
+    margin-left: 7rem;
+
+    }
+  &__container {
+    margin-left: 7rem;
+    margin-top: 1rem;
+    padding-top: 2rem;
+    width: 538px;
+    min-height: 204px;
+    background-color: rgb(56, 54, 54);
+    border-radius: 0.5rem;
+  }
+  & button {
+    align-items: center;
+
+    margin-top: 1rem;
+    // display: flex;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background: transparent;
+    border-color: white;
+    height: 35px;
+    width: 160px;
+    font-size: 10px;
+    border-radius: 0.5rem;
+    margin-left: 0.8rem;
+  }
+}
+
+.informazioni {
+  margin-top: 1rem;
+  font-family: "Roboto", sans-serif;
+  &__list {
+    margin-left: 7rem;
+    margin-top: 1rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  & li:nth-child(1):hover {
+    background-color: rgba(211, 211, 211, 0.39);
+    width: 220px;
+  }
+  & li:nth-child(2):hover {
+    background-color: rgba(211, 211, 211, 0.39);
+    width: 190px;
+  }
+  & li:nth-child(3):hover {
+    background-color: rgba(211, 211, 211, 0.39);
+    width: 270px;
+  }
+  & li:nth-child(4):hover {
+    background-color: rgba(211, 211, 211, 0.39);
+    width: 470px;
+  }
+  & li:nth-child(5):hover {
+    background-color: rgba(211, 211, 211, 0.39);
+    width: 220px;
+  }
+}
+.footer{
+    font-family: "Roboto", sans-serif;
+    margin-top: 1rem;
+    background-color: rgb(3, 0, 0);
+    padding-left: 7rem;
+    padding-top: 1rem;
+    width: 100%;
+    & h4{
+        color: rgba(255, 255, 255, 0.402);
+    }
+    & ul {
+        margin-top: 0.5rem;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-bottom: 1.5rem;
+    }
+    & li{
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.402);
+
+    }
+    &__first{
+        display: flex;
+        gap: 8rem;
+        
+    }
+    
+}
+
+@media (max-width:390px) {
+    body{
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    }
+    .container{
+        background-image: url("./assets/legomedia.webp");
+        background-repeat: no-repeat;
+        height: 80vh;
+        background-size: cover;
+
+    }
+    .menu{
+    width: 100%;
+    padding-left: 8px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.5rem;
+    &__button {
+        background-color: transparent;
+        min-width: 46px;
+        min-height: 46px;
+        align-items: center;
+        border: none;
+        border-radius: 50%;
+        padding: 0;
+        text-align: center;
+      }
+    &__logo {
+        display: flex;
+    
+        background-color: transparent;
+        max-width: 56px;
+        max-height: 56px;
+      }
+      &__button:hover {
+        background-color: grey;
+        cursor: pointer;
+      }
+      &__cloudgamingbtn {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 160px;
+        max-height: 50px;
+        font-family: "Roboto", sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        background-color: transparent;
+        border: none;
+        margin-right: 0;
+      }
+      &__cloudgamingbtn:hover {
+        background-color: grey;
+        border-radius: 5px;
+      }
+      &__logo {
+        display: flex;
+    
+        background-color: transparent;
+        max-width: 56px;
+        max-height: 56px;
+      }
+      &__right {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      &__searchbar {
+        width: 70%;
+        text-align: center;
+      }
+      &__structure {
+        border-radius: 35px;
+        position: relative;
+        height: 48px;
+        text-align: center;
+      }
+      &__bar {
+        background-color: rgb(24, 24, 24);
+        align-items: center;
+        width: 90%;
+        height: 90%;
+        border-radius: 35px;
+        padding: 8px 40px 8px 45px;
+        border: 1px solid lightgrey;
+        transition: box-shadow 0.3s;
+        color: rgba(227, 213, 213, 0.547);
+        font-size: 16px;
+        line-height: 5px;
+      }
+      &__bar:focus {
+        outline: none;
+        box-shadow: 0 0 5px 2px white;
+      }
+      &__bar::placeholder {
+        color: rgba(227, 213, 213, 0.419);
+      }
+      &__search {
+        position: absolute;
+        left: 0;
+        min-width: 5px;
+        height: 5px;
+        border: none;
+        background: none;
+        padding-left: 25px;
+        padding-top: 0.8rem;
+      }
+      &__Icon-search {
+        align-items: center;
+        width: 20px;
+      }
+    
+      &__profilebutton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: #484e58;
+      }
+    
+    }
+    .background {
+        display: flex;
+        margin-left: 1rem;
+        margin-top: 14rem;
+        color: white;
+        max-width: 600px;
+        font-family: "Roboto", sans-serif;
+        & h1{
+            font-size: 24px;
+        }
+        &__prod {
+            color: rgb(193, 191, 191);
+            font-size: 16px;
+          }
+          &__gamepass {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+          }
+          &__pass {
+            width: 120px;
+          }
+          &__signin {
+            padding-top: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+          }
+          &__signinbutton {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 40px;
+            background-color: #008746;
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            border-radius: 2px;
+        
+            color: white;
+          }
+          &__cart {
+            background-color: rgb(184, 178, 178);
+            border: none;
+            border-radius: 0.2rem;
+            width: 100px;
+          }
+          .backgroung__img {
+            height: 35px;
+          }
+        }
+
+        .descrizione {
+            color: white;
+            font-family: "Roboto", sans-serif;
+            margin-left: 1rem;
+            margin-top: 5rem;
+            
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+
+            margin-top: 2rem;
+            color: white;
+            font-family: "Roboto", sans-serif;
+            margin-left: 0.3rem;
+            &__desc {
+                display: flex;
+                width: 370px;
+                min-height: 250px;
+                background-color: rgb(56, 54, 54);
+                border-radius: 0.5rem;
+                padding-left: 0.2rem;
+                padding-top: 1rem;
+                gap: 0.3rem;
+                margin-top: 9rem;
+              }
+              &__descrizione1 {
+                color: white;
+                max-width: 150px;
+              }
+              & h3{
+                font-size: 10px;
+              }
+              & p {
+                font-size: 10px;
+              }
+              &__info {
+                margin-top: 1rem;
+              }
+              &__ulteriori {
+                margin-top: 1rem;
+              }
+              &__card {
+                height: 100px;
+                width: 200px;
+              }
+              &__imgCard {
+                height: 350px;
+                width: 360px;
+                border-radius: 0.5rem;
+                margin-left: 0.2rem;
+              }
+        }
+        .funzionalità {
+            display: flex;
+            margin-top: 2rem;
+            color: white;
+            flex-wrap: wrap;
+            & h2{
+                margin-left: 0.5rem;
+            
+                }
+                &__container {
+                    
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    margin-left: 1rem;
+                    margin-top: 1rem;
+                    width: 300px;
+                    min-height: 214px;
+                    background-color: rgb(56, 54, 54);
+                    border-radius: 0.5rem;
+                    padding-bottom: 1rem;
+                  }
+                  & button {
+                    align-items: center;
+                
+                    margin-top: 1rem;
+                    display: flex;
+                    align-items: center;
+                    font-family: "Roboto", sans-serif;
+                    color: white;
+                    background: transparent;
+                    border-color: white;
+                    height: 35px;
+                    width: 160px;
+                    font-size: 10px;
+                    border-radius: 0.5rem;
+                    margin-left: 0.8rem;
+                  }
+        }
+        .informazioni {
+            margin-top: 1rem;
+            font-family: "Roboto", sans-serif;
+            &__list {
+              margin-left: 0.3rem;
+              margin-top: 1rem;
+              list-style: none;
+              display: flex;
+              flex-direction: column;
+              gap: 1rem;
+            }
+            & li:nth-child(1):hover {
+                background-color: rgba(211, 211, 211, 0.39);
+                width: 220px;
+              }
+              & li:nth-child(2):hover {
+                background-color: rgba(211, 211, 211, 0.39);
+                width: 190px;
+              }
+              & li:nth-child(3):hover {
+                background-color: rgba(211, 211, 211, 0.39);
+                width: 270px;
+              }
+              & li:nth-child(4):hover {
+                background-color: rgba(211, 211, 211, 0.39);
+                width: 470px;
+              }
+              & li:nth-child(5):hover {
+                background-color: rgba(211, 211, 211, 0.39);
+                width: 220px;
+              }
+        }
+        .footer{
+            display: flex;
+            flex-direction: column;
+            margin-top: 1rem;
+            background-color: rgb(3, 0, 0);
+            padding-left: 1rem;
+            padding-top: 1rem;
+            width: 100%;
+
+            & h4{
+                color: rgba(255, 255, 255, 0.402);
+            }
+            & ul {
+                margin-top: 0.5rem;
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                padding-bottom: 1.5rem;
+            }
+            & li{
+                font-size: 14px;
+                color: rgba(255, 255, 255, 0.402);
+        
+            }
+            &__first{
+                flex-direction: column;
+                gap: 1rem;
+           }
+           
+        }
+      
+    
+ }
