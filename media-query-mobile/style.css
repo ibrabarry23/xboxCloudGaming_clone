@@ -1,0 +1,572 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 72px;
+  padding: 0px 16px;
+  justify-content: space-between;
+}
+.menu .right__nav {
+  display: flex;
+}
+.menu .right__nav .signin {
+  display: none;
+}
+.menu .right__nav .profile {
+  max-width: 80px;
+  display: flex;
+}
+.menu .right__nav .profile .search__logo {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 0px 16px 0px 0px;
+}
+.menu .right__nav .profile .search__logo img {
+  width: 22px;
+  height: 22px;
+}
+.menu .right__nav .profile .profile__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  background-color: #484e58;
+  width: 40px;
+  height: 40px;
+}
+.menu .menu__button {
+  max-width: 28px;
+  max-height: 28px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0px 8px 0px -6px;
+  text-align: center;
+  background-color: transparent;
+}
+.menu .cloud__container {
+  max-width: 160px;
+  height: 40px;
+  padding: 0px 8px;
+}
+.menu .cloud__container .cloud__gaming {
+  display: flex;
+  align-items: center;
+  max-width: 144px;
+  border: none;
+  background-color: transparent;
+}
+.menu .cloud__container .cloud__gaming h2 {
+  font-family: "Roboto" sans-serif;
+  font-size: 14px;
+  color: white;
+}
+.menu .cloud__container .cloud__gaming .beta__container {
+  width: 32px;
+  height: 32px;
+  padding: 0px 0px 2px 8px;
+}
+.menu .cloud__container .cloud__gaming .beta__container img {
+  width: 32px;
+  height: 32px;
+}
+
+.menu__button:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+
+.cloud__gaming:hover {
+  background-color: grey;
+  border-radius: 5px;
+}
+
+.header__carousel {
+  display: flex;
+  white-space: nowrap;
+  gap: 280px;
+  max-width: 375px;
+  max-height: 272px;
+  margin: -6px 0px;
+  padding: 6px 0px 6px 16px;
+}
+.header__carousel .game__cards {
+  max-width: 272px;
+  height: auto;
+  position: relative;
+}
+.header__carousel .game__cards #games {
+  width: 272px;
+  min-height: 272px;
+  position: absolute;
+  border-radius: 5px;
+}
+.header__carousel .game__cards #svg {
+  position: absolute;
+  width: 26px;
+  height: 16px;
+  margin-top: 175px;
+  margin-left: 15px;
+}
+.header__carousel .game__cards .pad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 240px;
+  margin-left: 240px;
+  border-bottom-right-radius: 5px;
+}
+.header__carousel .game__cards .pad #svg2 {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+}
+.header__carousel .game__cards .game__title {
+  white-space: nowrap;
+  color: white;
+  font-family: "Roboto" sans-serif;
+  text-shadow: 1px 1px 9px #000000;
+  margin-top: 200px;
+  margin-left: 15px;
+  position: absolute;
+}
+.header__carousel .game__cards .game__parag {
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Roboto" sans-serif;
+  color: white;
+  text-shadow: 1px 1px 9px #000000;
+  margin-top: 235px;
+  margin-left: 15px;
+}
+
+.second__carousel {
+  max-width: 375px;
+  padding-top: 300px;
+  padding-left: 16px;
+}
+.second__carousel .secar__semititles {
+  padding-bottom: 15px;
+  color: white;
+  font-family: "Roboto" sans-serif;
+  font-size: 12px;
+}
+.second__carousel .cards {
+  display: flex;
+  max-width: 375px;
+  max-height: 192px;
+}
+.second__carousel .cards .card {
+  padding-right: 140px;
+}
+.second__carousel .cards .card #card1 {
+  height: 192px;
+  width: 128px;
+  position: absolute;
+  z-index: 0;
+  border-radius: 5px;
+}
+.second__carousel .cards .card #svg {
+  z-index: 1;
+  position: absolute;
+  height: 16px;
+  width: 26px;
+  margin-top: 168px;
+  margin-left: 10px;
+}
+.second__carousel .cards .card .pad {
+  z-index: 1;
+  display: flex;
+  height: 32px;
+  width: 32px;
+  background-color: rgba(23, 67, 88, 0.5);
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  margin-top: 160px;
+  margin-left: 96px;
+  border-bottom-right-radius: 5px;
+}
+.second__carousel .cards .card .pad #svg2 {
+  z-index: 1;
+  height: 16px;
+  width: 16px;
+}
+
+.first__menu {
+  max-width: 375px;
+  height: 100vh;
+  background-color: darkgray;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(2px) brightness(0.44) contrast(21%) invert(14%);
+  background-image: url(../assets/star-wars-characters-1bjfbqgbc23v1ch7\ \(1\).jpg);
+}
+
+.body__carousels {
+  max-width: 375px;
+  height: 100vh;
+  padding-left: 16px;
+  background: rgb(20, 56, 41);
+  background: linear-gradient(180deg, rgb(20, 56, 41) 0%, rgb(20, 56, 41) 46%, rgb(26, 27, 30) 60%);
+}
+.body__carousels .bodycar__semititles {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  color: white;
+  font-family: "Roboto" sans-serif;
+  font-size: 12px;
+}
+.body__carousels .cards {
+  display: flex;
+  max-width: 375px;
+  max-height: 192px;
+}
+.body__carousels .cards .card {
+  padding-right: 140px;
+}
+.body__carousels .cards .card #card1 {
+  height: 192px;
+  width: 128px;
+  position: absolute;
+  z-index: 0;
+  border-radius: 5px;
+}
+.body__carousels .cards .card #svg {
+  z-index: 1;
+  position: absolute;
+  height: 16px;
+  width: 26px;
+  margin-top: 168px;
+  margin-left: 10px;
+}
+.body__carousels .cards .card .pad {
+  z-index: 1;
+  display: flex;
+  height: 32px;
+  width: 32px;
+  background-color: rgba(23, 67, 88, 0.5);
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  margin-top: 160px;
+  margin-left: 96px;
+  border-bottom-right-radius: 5px;
+}
+.body__carousels .cards .card .pad #svg2 {
+  z-index: 1;
+  height: 16px;
+  width: 16px;
+}
+.body__carousels .bodycar__gamepass {
+  padding-top: 40px;
+  padding-left: 110px;
+}
+.body__carousels .bodycar__gamepass img {
+  width: 157px;
+  height: 27px;
+}
+
+.long__cards {
+  margin-top: 280px;
+}
+.long__cards .lcards__titles {
+  color: white;
+  font-family: "Roboto" sans-serif;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.long__cards .long__car {
+  display: flex;
+  max-width: 375px;
+  gap: 300px;
+}
+.long__cards .long__car .l__card {
+  max-width: 375px;
+}
+.long__cards .long__car .l__card #card2 {
+  height: 156px;
+  width: 280px;
+  position: absolute;
+  border-radius: 5px;
+  z-index: 0;
+}
+.long__cards .long__car .l__card #svg {
+  z-index: 1;
+  position: absolute;
+  height: 16px;
+  width: 26px;
+  margin-top: 130px;
+  margin-left: 10px;
+}
+
+.genres {
+  max-width: 375px;
+  height: 100vh;
+  background-color: #1a1b1e;
+}
+.genres .genres__titles {
+  color: white;
+  font-family: "Roboto" sans-serif;
+  font-size: 12px;
+  padding-left: 15px;
+}
+.genres .genres__button {
+  display: grid;
+  gap: -3px;
+  grid-template-areas: "indie forfamily" "shooter action" "brawler strategy" "simulator roleplay";
+  max-width: 375px;
+  height: 100vh;
+  padding-left: 15px;
+  padding-top: 20px;
+}
+.genres .genres__button .gen__button {
+  width: 163.5px;
+  height: 96px;
+  border-radius: 5px;
+  z-index: 0;
+  position: relative;
+}
+.genres .genres__button .gen__button img {
+  z-index: 1;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  margin-left: 130px;
+  margin-top: 10px;
+}
+.genres .genres__button .gen__button h5 {
+  z-index: 1;
+  position: absolute;
+  font-family: "Roboto" sans-serif;
+  padding-top: 70px;
+  padding-left: 5px;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+#indie {
+  grid-area: indie;
+  background-color: #008746;
+}
+
+#forfamily {
+  grid-area: forfamily;
+  background-color: #008746;
+}
+
+#shooter {
+  grid-area: shooter;
+  background-color: #008746;
+}
+
+#action {
+  grid-area: action;
+  background-color: #008572;
+}
+
+#brawler {
+  grid-area: brawler;
+  background-color: #008572;
+}
+
+#strategy {
+  grid-area: strategy;
+  background-color: #008572;
+}
+
+#simulator {
+  grid-area: simulator;
+  background-color: #007c8f;
+}
+
+#roleplay {
+  grid-area: roleplay;
+  background-color: #007c8f;
+}
+
+.triple__carousel {
+  background-color: #1a1b1e;
+  max-width: 375px;
+  height: 100vh;
+}
+.triple__carousel .all__games {
+  color: white;
+  font-family: "Roboto" sans-serif;
+  font-size: 12px;
+  padding-left: 15px;
+}
+.triple__carousel .triple__cards {
+  display: grid;
+  grid-template-areas: "daystodie plague ageof2" "amncoll amnreb amntheb" "among ante araga";
+  max-width: 375px;
+  height: 100%;
+  padding-left: 15px;
+  align-content: space-evenly;
+  padding-bottom: 80px;
+}
+.triple__carousel .triple__cards .tri__card {
+  max-height: 103px;
+}
+.triple__carousel .triple__cards .tri__card #tri {
+  position: absolute;
+  z-index: 0;
+  width: 103px;
+  height: 103px;
+}
+.triple__carousel .triple__cards .tri__card .container__triple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 1;
+  margin-top: 71px;
+  margin-left: 71px;
+}
+.triple__carousel .triple__cards .tri__card .container__triple #pad {
+  width: 16px;
+  height: 16px;
+  z-index: 1;
+}
+
+#daystodie {
+  grid-area: daystodie;
+}
+
+#plague {
+  grid-area: plague;
+}
+
+#ageof2 {
+  grid-area: ageof2;
+}
+
+#amncoll {
+  grid-area: amncoll;
+}
+
+#amnreb {
+  grid-area: amnreb;
+}
+
+#amntheb {
+  grid-area: amntheb;
+}
+
+#among {
+  grid-area: among;
+}
+
+#ante {
+  grid-area: ante;
+}
+
+#araga {
+  grid-area: araga;
+}
+
+.show__gamelist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1b1e;
+  padding-bottom: 35px;
+}
+.show__gamelist .display__button {
+  width: 288px;
+  height: 40px;
+  text-align: center;
+  color: white;
+  background-color: #2d3036;
+  border: none;
+  border-radius: 5px;
+}
+
+.footer {
+  background-color: black;
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer__container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 95px;
+}
+.footer .footer__container h4 {
+  padding-bottom: 10px;
+  color: lightgrey;
+  font-family: "Roboto" sans-serif;
+}
+.footer .footer__container a {
+  padding-bottom: 15px;
+  color: lightgrey;
+  text-decoration: none;
+  font-family: "Roboto" sans-serif;
+  font-size: 13px;
+}
+
+.footer__container a:hover {
+  text-decoration: underline;
+}
+
+.under__footer .language {
+  padding-left: 15px;
+}
+.under__footer .language #globe {
+  width: 24px;
+  height: 20px;
+  padding-right: 8px;
+}
+.under__footer .language a {
+  text-decoration: none;
+  color: lightgrey;
+  font-size: 13px;
+  text-align: center;
+  padding-right: 10px;
+}
+.under__footer .language #cali {
+  padding-top: 15px;
+}
+.under__footer .cookies__contacts {
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+.under__footer .cookies__contacts a {
+  text-decoration: none;
+  color: lightgrey;
+  font-size: 11px;
+  padding-right: 10px;
+}
+.under__footer .cookies__contacts a:hover {
+  text-decoration: underline;
+}
+
+.language a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */

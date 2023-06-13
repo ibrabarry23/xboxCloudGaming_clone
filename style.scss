@@ -1,0 +1,1382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-height: 88px;
+    padding: 0px 48px;
+    padding-top: 20px;
+
+    .right__nav {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        right: 180px;
+        padding-top: 20px;
+    }
+
+    .menu__button {
+        background-color: transparent;
+        display: inline-block;
+        width: 46px;
+        height: 46px;
+        border: none;
+        border-radius: 50%;
+        padding: 0;
+        text-align: center;
+        margin: 0px 38px 0px -6px;
+    
+        .logo {
+            display: block;
+            margin: 0 auto;
+            background-color: transparent;
+            width: 36px;
+            height: 36px;
+            line-height: 21px;
+        }
+    }
+
+    .cloud__gaming {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 160px;
+        height: 40px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        background-color: transparent;
+        border: none;
+    
+        & h2 {
+            padding-right: 2px;
+            color: white;
+        }
+    
+        & img {
+            height: 32px;
+            width: 32px;
+        }
+    }
+
+    .signin {
+    max-width: 248px;
+    height: 40px;
+    padding-right: 40px;
+
+        .signin__button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 248px;
+            height: 40px;
+            background-color: #008746;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
+    }
+
+    .searchbar{
+        width: 60%;
+        min-width: 250px;
+        max-width: 330px;
+        height: auto;
+        text-align: center;
+
+        .structure{
+            border-radius: 35px;
+            position: relative;
+            height: 48px;
+            text-align: center;
+            padding-right: 40px;
+
+            .search{
+                position: absolute;
+                left: 0;
+                width: 50px;
+                height: 100%;
+                border: none;
+                background: none;
+                line-height: 5px;
+                padding-left: 10px;
+            }
+
+            .bar{
+                background-color: rgb(24, 24, 24);
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                border-radius: 35px;
+                padding: 8px 40px 8px 45px;
+                border: 1px solid lightgrey;
+                transition: box-shadow 0.3s;
+                color: rgba(227, 213, 213, 0.547);
+                font-size: 16px;
+                line-height: 5px;
+            }
+        
+            .icon-search{
+                height: 23px;
+                width: 23px;
+            }
+        }
+    }
+
+    .profile {
+        height: 52px;
+        width: 52px;
+    
+        .profile__button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            background-color: #484e58;
+        
+            & img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }    
+}
+
+.menu__button:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+.cloud__gaming:hover {
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.signin__button:hover {
+    background-color: #7b4;
+}
+
+.bar:focus{
+    outline: none;
+    box-shadow: 0 0 5px 2px white;
+
+}
+
+.bar::placeholder {
+    color: rgba(227, 213, 213, 0.419);
+    padding-left: 4px;
+}
+
+.header__carousel {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    height: 500px;
+    padding-top: 50px;
+
+    .header__cards {
+        display: flex;
+        width: 100%;
+        height: 500px;
+        gap: 20px;
+        padding-top: 50px;
+
+        .game__cards {
+            left: 45px;
+            position: relative;
+            width: 100%;
+            height: 500px;
+            border-radius: 5px;
+        
+            #games {
+                position: absolute;
+                z-index: 0;
+                width: 100%;
+                height: 500px;
+                border-radius: 5px;
+            }
+        
+            #svg__cards {
+                position: absolute;
+                top: 365px;
+                left: 18px;
+                z-index: 1;
+                height: 18px;
+                width: 60px;
+            }
+        
+            .game__title {
+                position: absolute;
+                top: 390px;
+                left: 30px;
+                z-index: 1;
+                color: white;
+                font-family: 'Roboto', sans-serif;
+                text-shadow: 4px 3px 0 #7A7A7A, 0px 0px 7px #000000;
+            }
+        
+            .game__parag {
+                position: absolute;
+                top: 450px;
+                left: 30px;
+                z-index: 1;
+                color: white;
+                font-family: 'Roboto', sans-serif;
+                text-shadow: 4px 3px 0 #7A7A7A, 0px 0px 7px #000000;
+            }
+        }
+    }
+}
+
+.second__carousel {
+    padding-top: 100px;
+
+    
+    .secar__semititles {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+
+        .cloud__meta {
+            padding-left: 50px;
+        }
+
+        .show__all {
+            padding-right: 105px;
+        }
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 259.5px;
+        gap: 15px;
+        margin: 6px 0px;
+        padding: 6px 0px 6px 48px;
+      
+        .card {
+            padding-right: 180px;
+
+            #card1 {
+                height: 259.5px;
+                width: 173px;
+                position: absolute;
+                z-index: 0;
+                border-radius: 5px;
+            }
+
+            #svg {
+                z-index: 1;
+                position: absolute;
+                height: 16.49px;
+                width: 26.38px;
+                margin-top: 235px;
+                margin-left: 12px;
+            }
+
+            .pad {
+                z-index: 1;
+                display: flex;
+                height: 32px;
+                width: 32px;
+                background-color: rgba(23,67,88,0.5);
+                position: absolute;
+                align-items: center;
+                justify-content: center;
+                margin-left: 141px;
+                margin-top: 228px;
+
+                #svg2 {
+                    z-index: 1;
+                    height: 16px;
+                    width: 16px;
+                }
+            }
+        }
+    }
+}
+
+.first__menu {
+    width: 100%;
+    background-color: darkgray;
+    background-color:rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(2px) brightness(0.44) contrast(21%) invert(14%);
+    background-image:url(../xboxCloudGaming_clone/assets/star-wars-characters-1bjfbqgbc23v1ch7\ \(1\).jpg);
+}
+
+.pad:hover {
+    display: none;
+}
+
+#svg2:hover {
+    display: none;
+}
+
+#svg:hover {
+    display: none;
+}
+
+.body__carousels {
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+    background: rgb(20,56,41);
+    background: linear-gradient(180deg, rgba(20,56,41,1) 0%, rgba(20,56,41,1) 46%, rgba(26,27,30,1) 60%);
+
+
+    .bodycar__gamepass {
+        display: flex;
+        width: 100%;
+        height: 35px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        & img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .bodycar__titles {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+
+        .cloud__meta {
+            padding-left: 50px;
+        }
+
+        .show__all {
+            padding-right: 105px;
+        }
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 259.5px;
+        gap: 15px;
+        margin: 6px 0px;
+        padding: 6px 0px 6px 48px;
+      
+        .card {
+            padding-right: 180px;
+
+            #card1 {
+                height: 259.5px;
+                width: 173px;
+                position: absolute;
+                z-index: 0;
+                border-radius: 5px;
+            }
+
+            #svg {
+                z-index: 1;
+                position: absolute;
+                height: 16.49px;
+                width: 26.38px;
+                margin-top: 235px;
+                margin-left: 12px;
+            }
+
+            .pad {
+                z-index: 1;
+                display: flex;
+                height: 32px;
+                width: 32px;
+                background-color: rgba(23,67,88,0.5);
+                position: absolute;
+                align-items: center;
+                justify-content: center;
+                margin-left: 141px;
+                margin-top: 228px;
+
+                #svg2 {
+                    z-index: 1;
+                    height: 16px;
+                    width: 16px;
+                }
+            }
+        }
+    }
+}
+
+.long__cards {
+
+    .long__car {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+    }
+
+    .lcards__titles {
+        color: white;
+        font-family: 'Roboto' sans-serif;
+        padding-left: 45px;
+    }
+
+    .l__card {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-left: 45px;
+
+        #card2 {
+            height: 165px;
+            width: 300px;
+            position: absolute;
+            z-index: 0;
+            border-radius: 5px;
+        }
+
+        #svg {
+            z-index: 1;
+            position: absolute;
+            height: 16.49px;
+            width: 26.38px;
+            margin-top: 150px;
+            margin-left: 5px;
+        }
+    }
+}
+
+.genres {
+    width: 100%;
+    height: auto;
+    padding-top: 180px;
+    background: #1a1b1e;
+
+    .genres__titles {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        font-family: 'Roboto' sans-serif;
+
+        .gene {
+            padding-left: 50px;
+        }
+    }
+
+    .genres__buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        width: 100%;
+        padding-left: 45px;
+
+        .gen__button {
+            width: 195px;
+            height: 100px;
+            z-index: 0;
+            position: relative;
+            background-color: #008746;
+            border-radius: 5px;
+
+            & img {
+                z-index: 1;
+                width: 28px;
+                height: 28px;
+                position: absolute;
+                padding-left: 150px;
+                padding-top: 10px;
+            }
+
+            & h5 {
+                color: white;
+                font-family: 'Roboto' sans-serif;
+                font-size: 12px;
+                padding-top: 50px;
+                padding-left: 10px;
+            }
+        }
+
+        .gen__button2 {
+            width: 195px;
+            height: 100px;
+            z-index: 0;
+            position: relative;
+            background-color: #008572;
+            border-radius: 5px;
+
+            & img {
+                z-index: 1;
+                width: 28px;
+                height: 28px;
+                position: absolute;
+                padding-left: 150px;
+                padding-top: 10px;
+            }
+
+            & h5 {
+                color: white;
+                font-family: 'Roboto' sans-serif;
+                font-size: 12px;
+                padding-top: 50px;
+                padding-left: 10px;
+            }
+        }
+
+        .gen__button3 {
+            width: 195px;
+            height: 100px;
+            z-index: 0;
+            position: relative;
+            background-color: #007c8f;
+            border-radius: 5px;
+
+            & img {
+                z-index: 1;
+                width: 28px;
+                height: 28px;
+                position: absolute;
+                padding-left: 150px;
+                padding-top: 10px;
+            }
+
+            & h5 {
+                color: white;
+                font-family: 'Roboto' sans-serif;
+                font-size: 12px;
+                padding-top: 50px;
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+.triple__carousel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 620px;
+    background-color: #1a1b1e;
+    padding-left: 45px;
+
+    .all__games {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        font-family: 'Roboto' sans-serif;
+
+        .show__all {
+            padding-right: 210px;
+        }
+    }
+
+    .triple__cards {
+        display: flex;
+        flex: 1;
+        gap: 169px;
+        height: 150px;
+
+        .tri__card {
+            position: relative;
+
+            #tri {
+                position: absolute;
+                z-index: 0;
+                width: 150px;
+                height: 150px;
+            }
+            .container__triple {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 35px;
+                height: 35px;
+                background-color: rgba(black, 0.5);
+                position: absolute;
+                z-index: 1;
+                margin-top: 115px;
+                margin-left: 115px;
+            }
+
+            #pad {
+                width: 20px;
+                height: 20px;
+                z-index: 1;
+            }
+        }
+    }
+
+    .show__gamelist {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+
+        .display__button {
+            margin-top: 20px;
+            width: 270px;
+            height: 40px;
+            text-align: center;
+            color: white;
+            background-color: #2d3036;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+}
+
+.footer {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 15px;
+        padding-left: 75px;
+        padding-right: 95px;
+
+        & h4 {
+            padding-bottom: 10px;
+            color: lightgrey;
+            font-family: 'Roboto' sans-serif;
+        }
+
+        & a {
+            padding-bottom: 15px;
+            color: lightgrey;
+            text-decoration: none;
+            font-family: 'Roboto' sans-serif;
+            font-size: 13px;
+        }
+    }
+}
+
+.footer__container {
+
+    & a:hover {
+        text-decoration: underline;
+    }
+}
+
+.under__footer {
+
+    .language {
+        padding-left: 75px;
+        margin-top: 15px;
+        padding-bottom: 15px;
+
+        #globe {
+            width: 20px;
+            height: 20px;
+            padding-right: 8px;
+        }
+        
+        & a {
+            text-decoration: none;
+            color: lightgrey;
+            font-size: 13px;
+            text-align: center;
+            padding-right: 8px;
+        }
+    }
+
+    .cookies__contacts {
+        padding-left: 290px;
+        padding-bottom: 20px;
+        & a {
+            text-decoration: none;
+            color: lightgrey;
+            font-size: 13px;
+            padding-right: 25px;
+        }
+
+        & a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.language {
+    & a:hover {
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 375px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: black;
+    }
+    
+    .menu {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 72px;
+        padding: 0px 16px;
+        justify-content: space-between;
+    
+        .right__nav {
+            display: flex;
+    
+        .signin {
+            display: none;
+        }
+    
+        .profile {
+            max-width: 80px;
+            display: flex;
+    
+            .search__logo {
+                display: flex;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                margin: 0px 16px 0px 0px;
+                
+                & img {
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+    
+            .profile__button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                border-radius: 50%;
+                background-color: #484e58;
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    
+        .menu__button {
+            max-width: 28px;
+            max-height: 28px;
+            border: none;
+            border-radius: 50%;
+            padding: 0;
+            margin: 0px 8px 0px -6px;
+            text-align: center;
+            background-color: transparent;
+        }
+    
+        .cloud__container {
+            max-width: 160px;
+            height: 40px;
+            padding: 0px 8px;
+    
+            .cloud__gaming {
+                display: flex;
+                align-items: center;
+                max-width: 144px;
+                border: none;
+                background-color: transparent;
+        
+                & h2 {
+                    font-family: 'Roboto' sans-serif;
+                    font-size: 14px;
+                    color: white;
+                }
+                .beta__container {
+                    width: 32px;
+                    height: 32px;
+                    padding: 0px 0px 2px 8px ;
+    
+                    & img {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .menu__button:hover {
+        background-color: grey;
+        cursor: pointer;
+    }
+    
+    .cloud__gaming:hover {
+        background-color: grey;
+        border-radius: 5px;
+    }
+    
+    .header__carousel {
+        display: flex;
+        white-space: nowrap;
+        gap: 280px;
+        max-width: 375px;
+        max-height: 272px;
+        margin: -6px 0px;
+        padding: 6px 0px 6px 16px;
+    
+        .game__cards {
+            max-width: 272px;
+            height: auto;
+            position: relative;
+    
+            #games {
+                width: 272px;
+                min-height: 272px;
+                position: absolute;
+                border-radius: 5px;
+            }
+    
+            #svg {
+                position: absolute;
+                width: 26px;
+                height: 16px;
+                margin-top: 175px;
+                margin-left: 15px;
+            }
+    
+            .pad {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 32px;
+                height: 32px;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.5);
+                margin-top: 240px;
+                margin-left: 240px;
+                border-bottom-right-radius: 5px;
+    
+                
+                #svg2 {
+                    position: absolute;
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+    
+            .game__title {
+                white-space: nowrap;
+                color: white;
+                font-family: 'Roboto' sans-serif;
+                text-shadow: 1px 1px 9px #000000;
+                margin-top: 200px;
+                margin-left: 15px;
+                position: absolute;
+            }
+    
+            .game__parag {
+                white-space: nowrap;
+                position: absolute;
+                font-family: 'Roboto' sans-serif;
+                color: white;
+                text-shadow: 1px 1px 9px #000000;
+                margin-top: 235px;
+                margin-left: 15px;
+            }
+        }
+    }
+        .second__carousel {
+            max-width: 375px;
+            padding-top: 300px;
+            padding-left: 16px;
+    
+            .secar__semititles {
+                padding-bottom: 15px;
+                color: white;
+                font-family: 'Roboto' sans-serif;
+                font-size: 12px;
+            }
+    
+            .cards {
+                display: flex;
+                max-width: 375px;
+                max-height: 192px;
+    
+                .card {
+                    padding-right: 140px;
+    
+                    #card1 {
+                        height: 192px;
+                        width: 128px;
+                        position: absolute;
+                        z-index: 0;
+                        border-radius: 5px;
+                    }
+    
+                    #svg {
+                        z-index: 1;
+                        position: absolute;
+                        height: 16px;
+                        width: 26px;
+                        margin-top: 168px;
+                        margin-left: 10px;
+                    }
+    
+                    .pad {
+                        z-index: 1;
+                        display: flex;
+                        height: 32px;
+                        width: 32px;
+                        background-color: rgba(23,67,88,0.5);
+                        position: absolute;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 160px;
+                        margin-left: 96px;
+                        border-bottom-right-radius: 5px;
+    
+                        #svg2 {
+                            z-index: 1;
+                            height: 16px;
+                            width: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    
+    .first__menu {
+        max-width: 375px;
+        height: 100vh;
+        background-color: darkgray;
+        background-color:rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(2px) brightness(0.44) contrast(21%) invert(14%);
+        background-image:url(../assets/star-wars-characters-1bjfbqgbc23v1ch7\ \(1\).jpg);
+    }
+    
+    .body__carousels {
+        max-width: 375px;
+        height: 100vh;
+        padding-left: 16px;
+        background: rgb(20,56,41);
+        background: linear-gradient(180deg, rgba(20,56,41,1) 0%, rgba(20,56,41,1) 46%, rgba(26,27,30,1) 60%);
+    
+        .bodycar__semititles {
+            padding-top: 25px;
+            padding-bottom: 15px;
+            color: white;
+            font-family: 'Roboto' sans-serif;
+            font-size: 12px;
+        }
+    
+        .cards {
+            display: flex;
+            max-width: 375px;
+            max-height: 192px;
+    
+            .card {
+                padding-right: 140px;
+    
+                #card1 {
+                    height: 192px;
+                    width: 128px;
+                    position: absolute;
+                    z-index: 0;
+                    border-radius: 5px;
+                }
+    
+                #svg {
+                    z-index: 1;
+                    position: absolute;
+                    height: 16px;
+                    width: 26px;
+                    margin-top: 168px;
+                    margin-left: 10px;
+                }
+    
+                .pad {
+                    z-index: 1;
+                    display: flex;
+                    height: 32px;
+                    width: 32px;
+                    background-color: rgba(23,67,88,0.5);
+                    position: absolute;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 160px;
+                    margin-left: 96px;
+                    border-bottom-right-radius: 5px;
+    
+                    #svg2 {
+                        z-index: 1;
+                        height: 16px;
+                        width: 16px;
+                    }
+                }
+            }
+        }
+    
+        .bodycar__gamepass {
+            padding-top: 40px;
+            padding-left: 110px;
+    
+            & img {
+                width: 157px;
+                height: 27px;
+            }
+        }
+    }
+    
+    .long__cards {
+        margin-top: 280px;
+    
+        .lcards__titles {
+            color: white;
+            font-family: 'Roboto' sans-serif;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+    
+        .long__car {
+            display: flex;
+            max-width: 375px;
+            gap: 300px;
+        
+            .l__card {
+                max-width: 375px;
+        
+                #card2 {
+                    height: 156px;
+                    width: 280px;
+                    position: absolute;
+                    border-radius: 5px;
+                    z-index: 0;
+                }
+        
+                #svg {
+                    z-index: 1;
+                    position: absolute;
+                    height: 16px;
+                    width: 26px;
+                    margin-top: 130px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    
+    .genres {
+        max-width: 375px;
+        height: 100vh;
+        background-color: #1a1b1e;
+    
+        .genres__titles {
+            color: white;
+            font-family: 'Roboto' sans-serif;
+            font-size: 12px;
+            padding-left: 15px;
+        }
+    
+        .genres__button {
+            display: grid;
+            gap: -3px;
+            grid-template-areas: 
+            "indie forfamily"
+            "shooter action"
+            "brawler strategy"
+            "simulator roleplay";
+            max-width: 375px;
+            height: 100vh;
+            padding-left: 15px;
+            padding-top: 20px;
+    
+            .gen__button {
+                width: 163.5px;
+                height: 96px;
+                border-radius: 5px;
+                z-index: 0;
+                position: relative;
+    
+                & img {
+                    z-index: 1;
+                    width: 28px;
+                    height: 28px;
+                    position: absolute;
+                    margin-left: 130px;
+                    margin-top: 10px;
+                }
+    
+                & h5 {
+                    z-index: 1;
+                    position: absolute;
+                    font-family: 'Roboto' sans-serif;
+                    padding-top: 70px;
+                    padding-left: 5px;
+                    color: white;
+                    font-size: 10px;  
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    
+    #indie {
+        grid-area: indie;
+        background-color: #008746;
+    }
+    
+    #forfamily {
+        grid-area: forfamily;
+        background-color: #008746;
+    }
+    
+    #shooter {
+        grid-area: shooter;
+        background-color: #008746;
+    }
+    
+    #action {
+        grid-area: action;
+        background-color: #008572;
+    }
+    
+    #brawler {
+        grid-area: brawler;
+        background-color: #008572;
+    }
+    
+    #strategy {
+        grid-area: strategy;
+        background-color: #008572;
+    }
+    
+    #simulator {
+        grid-area: simulator;
+        background-color: #007c8f;
+    }
+    
+    #roleplay {
+        grid-area: roleplay;
+        background-color: #007c8f;
+    }
+    
+    .triple__carousel {
+        background-color: #1a1b1e;
+        max-width: 375px;
+        height: 100vh;
+    
+        .all__games {
+            color: white;
+            font-family: 'Roboto' sans-serif;
+            font-size: 12px;
+            padding-left: 15px;
+        }
+    
+        .triple__cards {
+            display: grid;
+            grid-template-areas: 
+            "daystodie plague ageof2"
+            "amncoll amnreb amntheb"
+            "among ante araga";
+            max-width: 375px;
+            height: 100%;
+            padding-left: 15px;
+            align-content: space-evenly;
+            padding-bottom: 80px;
+    
+            .tri__card {
+                max-height: 103px;
+    
+                #tri {
+                    position: absolute;
+                    z-index: 0;
+                    width: 103px;
+                    height: 103px;
+                }
+    
+                .container__triple {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 32px;
+                    height: 32px;
+                    background-color: rgba(black, 0.5);
+                    position: absolute;
+                    z-index: 1;
+                    margin-top: 71px;
+                    margin-left: 71px;
+    
+                    #pad {
+                        width: 16px;
+                        height: 16px;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+    }
+    
+    #daystodie {
+        grid-area: daystodie;
+    }
+    
+    
+    #plague {
+        grid-area: plague;
+    }
+    
+    
+    #ageof2 {
+        grid-area: ageof2;
+    }
+    
+    
+    #amncoll {
+        grid-area: amncoll;
+    }
+    
+    
+    #amnreb {
+        grid-area: amnreb;
+    }
+    
+    
+    #amntheb {
+        grid-area: amntheb;
+    }
+    
+    
+    #among {
+        grid-area: among;
+    }
+    
+    
+    #ante {
+        grid-area: ante;
+    }
+    
+    
+    #araga {
+        grid-area: araga;
+    }
+    
+    .show__gamelist {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1a1b1e;
+        padding-bottom: 35px;
+    
+        .display__button {
+            width: 288px;
+            height: 40px;
+            text-align: center;
+            color: white;
+            background-color: #2d3036;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+    
+    .footer {
+        background-color: black;
+        max-width: 375px;
+        display: flex;
+        flex-direction: column;
+    
+        .footer__container {
+            display: flex;
+            flex-direction: column;
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 95px;
+    
+            & h4 {
+                padding-bottom: 10px;
+                color: lightgrey;
+                font-family: 'Roboto' sans-serif;
+            }
+    
+            & a {
+                padding-bottom: 15px;
+                color: lightgrey;
+                text-decoration: none;
+                font-family: 'Roboto' sans-serif;
+                font-size: 13px;
+            }
+        }
+    }
+    
+    .footer__container {
+    
+        & a:hover {
+            text-decoration: underline;
+        }
+    }
+    
+    .under__footer {
+    
+        .language {
+            padding-left: 15px;
+    
+            #globe {
+                width: 24px;
+                height: 20px;
+                padding-right: 8px;
+            }
+            
+            & a {
+                text-decoration: none;
+                color: lightgrey;
+                font-size: 13px;
+                text-align: center;
+                padding-right: 10px;
+            }
+    
+            #cali {
+                padding-top: 15px;
+            }
+        }
+    
+        .cookies__contacts {
+            padding-top: 30px;
+            padding-left: 15px;
+            padding-bottom: 10px;
+    
+            & a {
+                text-decoration: none;
+                color: lightgrey;
+                font-size: 11px;
+                padding-right: 10px;
+            }
+    
+            & a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    .language {
+        & a:hover {
+            text-decoration: underline;
+        }
+    }
+    
+}
+  
+
