@@ -4,7 +4,6 @@ The project consists of the realization of the graphical interface of the **xbox
 ##Members:
 - Ibrahima Tely Barry
 - Silvia Palazzotto
-- Simone Paterno 
 - Micheal Renna
 
 ##Trello:
