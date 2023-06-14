@@ -70,7 +70,7 @@ body {
     .signin {
     max-width: 248px;
     height: 40px;
-    padding-right: 40px;
+    margin-right: 30px;
 
         .signin__button {
             display: flex;
@@ -88,55 +88,32 @@ body {
         }
     }
 
-    .searchbar{
-        width: 60%;
-        min-width: 250px;
-        max-width: 330px;
-        height: auto;
-        text-align: center;
-
-        .structure{
-            border-radius: 35px;
-            position: relative;
-            height: 48px;
-            text-align: center;
-            padding-right: 40px;
-
-            .search{
-                position: absolute;
-                left: 0;
-                width: 50px;
-                height: 100%;
-                border: none;
-                background: none;
-                line-height: 5px;
-                padding-left: 10px;
-            }
-
-            .bar{
-                background-color: rgb(24, 24, 24);
-                align-items: center;
-                width: 100%;
-                height: 100%;
-                border-radius: 35px;
-                padding: 8px 40px 8px 45px;
-                border: 1px solid lightgrey;
-                transition: box-shadow 0.3s;
-                color: rgba(227, 213, 213, 0.547);
-                font-size: 16px;
-                line-height: 5px;
-            }
-        
-            .icon-search{
-                height: 23px;
-                width: 23px;
-            }
-        }
-    }
-
     .profile {
         height: 52px;
         width: 52px;
+        margin-right: 140px;
+        display: flex;
+
+        .searchbar {
+            margin-right: 30px;
+
+            #searchsvg {
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                margin-top: 8px;
+                margin-left: 12px;
+            }
+
+            #searchbar {
+                text-align: center;
+                width: 288px;
+                height: 40px; 
+                border-radius: 20px;
+                border: 1px solid grey;
+                background-color: #050505;
+            }
+        }
     
         .profile__button {
             display: flex;
@@ -187,13 +164,12 @@ body {
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
-    height: 500px;
     padding-top: 50px;
 
     .header__cards {
         display: flex;
         width: 100%;
-        height: 500px;
+        height: 100%;
         gap: 20px;
         padding-top: 50px;
 
@@ -245,7 +221,7 @@ body {
 }
 
 .second__carousel {
-    padding-top: 100px;
+    padding-top: 40px;
 
     
     .secar__semititles {
@@ -272,6 +248,7 @@ body {
         gap: 15px;
         margin: 6px 0px;
         padding: 6px 0px 6px 48px;
+        margin-bottom: 30px;
       
         .card {
             padding-right: 180px;
@@ -317,6 +294,7 @@ body {
 
 .first__menu {
     width: 100%;
+    height: 110vh;
     background-color: darkgray;
     background-color:rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(2px) brightness(0.44) contrast(21%) invert(14%);
@@ -436,6 +414,10 @@ body {
         color: white;
         font-family: 'Roboto' sans-serif;
         padding-left: 45px;
+
+        .notavailable__soon {
+            color: white;
+        }
     }
 
     .l__card {
@@ -723,101 +705,136 @@ body {
 
 @media (max-width: 375px) {
 
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-    
-    body {
-        background-color: black;
-    }
-    
     .menu {
         display: flex;
-        align-items: center;
+        flex-direction: row;
         width: 100%;
-        height: 72px;
-        padding: 0px 16px;
-        justify-content: space-between;
+        max-height: 88px;
+        padding: 0px 48px;
+        padding-top: 20px;
     
         .right__nav {
             display: flex;
+            flex-direction: row;
+            position: fixed;
+            right: 0px;
+            padding-top: 20px;
+        }
+    
+        .menu__button {
+            background-color: transparent;
+            display: inline-block;
+            width: 46px;
+            height: 46px;
+            border: none;
+            border-radius: 50%;
+            padding: 0;
+            text-align: center;
+            margin: 0px 38px 0px -6px;
+        
+            .logo {
+                display: block;
+                margin: 0 auto;
+                background-color: transparent;
+                width: 36px;
+                height: 36px;
+                line-height: 21px;
+            }
+        }
+    
+        .cloud__gaming {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 160px;
+            height: 40px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 10px;
+            font-weight: bold;
+            background-color: transparent;
+            border: none;
+        
+            & h2 {
+                padding-right: 2px;
+                color: white;
+            }
+        
+            & img {
+                height: 32px;
+                width: 32px;
+            }
+        }
     
         .signin {
-            display: none;
+        max-width: 248px;
+        height: 40px;
+        margin-right: 30px;
+    
+            .signin__button {
+                display: none;
+                align-items: center;
+                justify-content: center;
+                width: 248px;
+                height: 40px;
+                background-color: #008746;
+                font-family: 'Roboto', sans-serif;
+                font-size: 14px;
+                font-weight: bold;
+                border: none;
+                border-radius: 5px;
+                color: white;
+            }
         }
     
         .profile {
-            max-width: 80px;
+            height: 52px;
+            width: 52px;
             display: flex;
     
-            .search__logo {
+            .searchbar {
                 display: flex;
-                align-items: center;
-                width: 40px;
-                height: 40px;
-                margin: 0px 16px 0px 0px;
-                
-                & img {
-                    width: 22px;
-                    height: 22px;
+                margin-right: 30px;
+    
+                #searchsvg {
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    margin-top: -10px;
+                    margin-left: 120px;
+                }
+    
+                #searchbar {
+                    display: none;
+                    text-align: center;
+                    width: 288px;
+                    height: 40px; 
+                    border-radius: 20px;
+                    border: 1px solid grey;
+                    background-color: #050505;
                 }
             }
-    
+        
             .profile__button {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 border: none;
                 border-radius: 50%;
-                background-color: #484e58;
                 width: 40px;
                 height: 40px;
-            }
-        }
-    }
-    
-        .menu__button {
-            max-width: 28px;
-            max-height: 28px;
-            border: none;
-            border-radius: 50%;
-            padding: 0;
-            margin: 0px 8px 0px -6px;
-            text-align: center;
-            background-color: transparent;
-        }
-    
-        .cloud__container {
-            max-width: 160px;
-            height: 40px;
-            padding: 0px 8px;
-    
-            .cloud__gaming {
-                display: flex;
-                align-items: center;
-                max-width: 144px;
-                border: none;
-                background-color: transparent;
-        
-                & h2 {
-                    font-family: 'Roboto' sans-serif;
-                    font-size: 14px;
-                    color: white;
-                }
-                .beta__container {
-                    width: 32px;
-                    height: 32px;
-                    padding: 0px 0px 2px 8px ;
-    
-                    & img {
-                        width: 32px;
-                        height: 32px;
-                    }
+                background-color: #484e58;
+                margin-left: 130px;
+                position: fixed;
+                top: 18px;
+                right: 0;
+            
+                & img {
+                    width: 25px;
+                    height: 25px;
                 }
             }
-        }
+        }    
     }
     
     .menu__button:hover {
@@ -830,167 +847,118 @@ body {
         border-radius: 5px;
     }
     
+    .signin__button:hover {
+        background-color: #7b4;
+    }
+    
+    .bar:focus{
+        outline: none;
+        box-shadow: 0 0 5px 2px white;
+    
+    }
+    
+    .bar::placeholder {
+        color: rgba(227, 213, 213, 0.419);
+        padding-left: 4px;
+    }
+    
     .header__carousel {
         display: flex;
+        flex-direction: row;
+        overflow: hidden;
         white-space: nowrap;
-        gap: 280px;
         max-width: 375px;
-        max-height: 272px;
-        margin: -6px 0px;
-        padding: 6px 0px 6px 16px;
+        padding-top: 20px;
     
-        .game__cards {
-            max-width: 272px;
-            height: auto;
-            position: relative;
-    
-            #games {
-                width: 272px;
-                min-height: 272px;
-                position: absolute;
-                border-radius: 5px;
-            }
-    
-            #svg {
-                position: absolute;
-                width: 26px;
-                height: 16px;
-                margin-top: 175px;
-                margin-left: 15px;
-            }
-    
-            .pad {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 32px;
-                height: 32px;
-                position: absolute;
-                background-color: rgba(0, 0, 0, 0.5);
-                margin-top: 240px;
-                margin-left: 240px;
-                border-bottom-right-radius: 5px;
-    
-                
-                #svg2 {
-                    position: absolute;
-                    width: 22px;
-                    height: 22px;
-                }
-            }
-    
-            .game__title {
-                white-space: nowrap;
-                color: white;
-                font-family: 'Roboto' sans-serif;
-                text-shadow: 1px 1px 9px #000000;
-                margin-top: 200px;
-                margin-left: 15px;
-                position: absolute;
-            }
-    
-            .game__parag {
-                white-space: nowrap;
-                position: absolute;
-                font-family: 'Roboto' sans-serif;
-                color: white;
-                text-shadow: 1px 1px 9px #000000;
-                margin-top: 235px;
-                margin-left: 15px;
-            }
-        }
-    }
-        .second__carousel {
+        .header__cards {
+            display: flex;
             max-width: 375px;
-            padding-top: 300px;
-            padding-left: 16px;
+            height: 50vh;
+            gap: 210px;
+            padding-top: 20px;
     
-            .secar__semititles {
-                padding-bottom: 15px;
-                color: white;
-                font-family: 'Roboto' sans-serif;
-                font-size: 12px;
-            }
-    
-            .cards {
-                display: flex;
+            .game__cards {
+                left: 16px;
+                position: relative;
                 max-width: 375px;
-                max-height: 192px;
-    
-                .card {
-                    padding-right: 140px;
-    
-                    #card1 {
-                        height: 192px;
-                        width: 128px;
-                        position: absolute;
-                        z-index: 0;
-                        border-radius: 5px;
-                    }
-    
-                    #svg {
-                        z-index: 1;
-                        position: absolute;
-                        height: 16px;
-                        width: 26px;
-                        margin-top: 168px;
-                        margin-left: 10px;
-                    }
-    
-                    .pad {
-                        z-index: 1;
-                        display: flex;
-                        height: 32px;
-                        width: 32px;
-                        background-color: rgba(23,67,88,0.5);
-                        position: absolute;
-                        align-items: center;
-                        justify-content: center;
-                        margin-top: 160px;
-                        margin-left: 96px;
-                        border-bottom-right-radius: 5px;
-    
-                        #svg2 {
-                            z-index: 1;
-                            height: 16px;
-                            width: 16px;
-                        }
-                    }
+                height: 272px;
+                border-radius: 5px;
+            
+                #games {
+                    position: absolute;
+                    z-index: 0;
+                    width: 272px;
+                    height: 272px;
+                    border-radius: 5px;
+                }
+            
+                #svg__cards {
+                    position: absolute;
+                    top: 150px;
+                    left: 2px;
+                    z-index: 1;
+                    height: 18px;
+                    width: 60px;
+                }
+            
+                .game__title {
+                    position: absolute;
+                    top: 180px;
+                    left: 12px;
+                    z-index: 1;
+                    color: white;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 28px;
+                    text-shadow: 4px 3px 0 #7A7A7A, 0px 0px 7px #000000;
+                }
+            
+                .game__parag {
+                    position: absolute;
+                    top: 230px;
+                    left: 12px;
+                    z-index: 1;
+                    color: white;
+                    font-family: 'Roboto', sans-serif;
+                    text-shadow: 4px 3px 0 #7A7A7A, 0px 0px 7px #000000;
                 }
             }
         }
-    
-    .first__menu {
-        max-width: 375px;
-        height: 100vh;
-        background-color: darkgray;
-        background-color:rgba(255, 255, 255, 0.4);
-        backdrop-filter: blur(2px) brightness(0.44) contrast(21%) invert(14%);
-        background-image:url(../assets/star-wars-characters-1bjfbqgbc23v1ch7\ \(1\).jpg);
     }
     
-    .body__carousels {
-        max-width: 375px;
-        height: 100vh;
-        padding-left: 16px;
-        background: rgb(20,56,41);
-        background: linear-gradient(180deg, rgba(20,56,41,1) 0%, rgba(20,56,41,1) 46%, rgba(26,27,30,1) 60%);
+    .second__carousel {
+        padding-top: 0px;
     
-        .bodycar__semititles {
-            padding-top: 25px;
-            padding-bottom: 15px;
+        
+        .secar__semititles {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             color: white;
-            font-family: 'Roboto' sans-serif;
-            font-size: 12px;
+            font-family: 'Roboto', sans-serif;
+    
+            .cloud__meta {
+                padding-left: 16px;
+                font-size: 19px;
+            }
+    
+            .show__all {
+                padding-right: 105px;
+                display: none;
+            }
         }
     
         .cards {
             display: flex;
-            max-width: 375px;
-            max-height: 192px;
-    
+            flex-direction: row;
+            max-width: 100%;
+            height: 100vh;
+            gap: 15px;
+            margin: 6px 0px;
+            padding: 6px 0px 6px 16px;
+            margin-bottom: 30px;
+          
             .card {
-                padding-right: 140px;
+                padding-right: 130px;
     
                 #card1 {
                     height: 192px;
@@ -1003,9 +971,9 @@ body {
                 #svg {
                     z-index: 1;
                     position: absolute;
-                    height: 16px;
-                    width: 26px;
-                    margin-top: 168px;
+                    height: 16.49px;
+                    width: 26.38px;
+                    margin-top: 165px;
                     margin-left: 10px;
                 }
     
@@ -1018,9 +986,8 @@ body {
                     position: absolute;
                     align-items: center;
                     justify-content: center;
-                    margin-top: 160px;
                     margin-left: 96px;
-                    border-bottom-right-radius: 5px;
+                    margin-top: 160px;
     
                     #svg2 {
                         z-index: 1;
@@ -1030,280 +997,376 @@ body {
                 }
             }
         }
+    }
+
+    #none {
+        display: none;
+    }
+    
+    .first__menu {
+        width: 100%;
+        height: 110vh;
+        background-color: darkgray;
+        background-color:rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(2px) brightness(0.44) contrast(21%) invert(14%);
+        background-image:url(../xboxCloudGaming_clone/assets/star-wars-characters-1bjfbqgbc23v1ch7\ \(1\).jpg);
+    }
+    
+    .pad:hover {
+        display: none;
+    }
+    
+    #svg2:hover {
+        display: none;
+    }
+    
+    #svg:hover {
+        display: none;
+    }
+    
+    .body__carousels {
+        max-width: 375px;
+        height: 100vh;
+        padding-top: 100px;
+        background: rgb(20,56,41);
+        background: linear-gradient(180deg, rgba(20,56,41,1) 0%, rgba(20,56,41,1) 46%, rgba(26,27,30,1) 60%);
+    
     
         .bodycar__gamepass {
-            padding-top: 40px;
-            padding-left: 110px;
+            display: flex;
+            width: 157px;
+            height: 27px;
+            margin-top: 10px;
+            margin-left: 110px;
+            margin-bottom: 40px;
     
             & img {
                 width: 157px;
                 height: 27px;
             }
         }
-    }
     
-    .long__cards {
-        margin-top: 280px;
-    
-        .lcards__titles {
+        .bodycar__titles {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             color: white;
-            font-family: 'Roboto' sans-serif;
-            font-size: 12px;
-            margin-bottom: 20px;
+            font-family: 'Roboto', sans-serif;
+    
+            .cloud__meta {
+                padding-left: 16px;
+                font-size: 19px;
+            }
+    
+            .show__all {
+                padding-right: 105px;
+                display: none;
+            }
         }
     
-        .long__car {
+        .cards {
             display: flex;
+            flex-direction: row;
             max-width: 375px;
-            gap: 300px;
-        
-            .l__card {
-                max-width: 375px;
-        
-                #card2 {
-                    height: 156px;
-                    width: 280px;
+            height: 50vh;
+            gap: 15px;
+            margin: 6px 0px;
+            padding: 6px 0px 6px 16px;
+          
+            .card {
+                padding-right: 130px;
+    
+                #card1 {
+                    height: 192px;
+                    width: 128px;
                     position: absolute;
-                    border-radius: 5px;
                     z-index: 0;
+                    border-radius: 5px;
                 }
-        
+    
                 #svg {
                     z-index: 1;
                     position: absolute;
-                    height: 16px;
-                    width: 26px;
-                    margin-top: 130px;
+                    height: 16.49px;
+                    width: 26.38px;
+                    margin-top: 165px;
                     margin-left: 10px;
                 }
-            }
-        }
-    }
     
-    .genres {
-        max-width: 375px;
-        height: 100vh;
-        background-color: #1a1b1e;
-    
-        .genres__titles {
-            color: white;
-            font-family: 'Roboto' sans-serif;
-            font-size: 12px;
-            padding-left: 15px;
-        }
-    
-        .genres__button {
-            display: grid;
-            gap: -3px;
-            grid-template-areas: 
-            "indie forfamily"
-            "shooter action"
-            "brawler strategy"
-            "simulator roleplay";
-            max-width: 375px;
-            height: 100vh;
-            padding-left: 15px;
-            padding-top: 20px;
-    
-            .gen__button {
-                width: 163.5px;
-                height: 96px;
-                border-radius: 5px;
-                z-index: 0;
-                position: relative;
-    
-                & img {
+                .pad {
                     z-index: 1;
-                    width: 28px;
-                    height: 28px;
-                    position: absolute;
-                    margin-left: 130px;
-                    margin-top: 10px;
-                }
-    
-                & h5 {
-                    z-index: 1;
-                    position: absolute;
-                    font-family: 'Roboto' sans-serif;
-                    padding-top: 70px;
-                    padding-left: 5px;
-                    color: white;
-                    font-size: 10px;  
-                    font-weight: bold;
-                }
-            }
-        }
-    }
-    
-    #indie {
-        grid-area: indie;
-        background-color: #008746;
-    }
-    
-    #forfamily {
-        grid-area: forfamily;
-        background-color: #008746;
-    }
-    
-    #shooter {
-        grid-area: shooter;
-        background-color: #008746;
-    }
-    
-    #action {
-        grid-area: action;
-        background-color: #008572;
-    }
-    
-    #brawler {
-        grid-area: brawler;
-        background-color: #008572;
-    }
-    
-    #strategy {
-        grid-area: strategy;
-        background-color: #008572;
-    }
-    
-    #simulator {
-        grid-area: simulator;
-        background-color: #007c8f;
-    }
-    
-    #roleplay {
-        grid-area: roleplay;
-        background-color: #007c8f;
-    }
-    
-    .triple__carousel {
-        background-color: #1a1b1e;
-        max-width: 375px;
-        height: 100vh;
-    
-        .all__games {
-            color: white;
-            font-family: 'Roboto' sans-serif;
-            font-size: 12px;
-            padding-left: 15px;
-        }
-    
-        .triple__cards {
-            display: grid;
-            grid-template-areas: 
-            "daystodie plague ageof2"
-            "amncoll amnreb amntheb"
-            "among ante araga";
-            max-width: 375px;
-            height: 100%;
-            padding-left: 15px;
-            align-content: space-evenly;
-            padding-bottom: 80px;
-    
-            .tri__card {
-                max-height: 103px;
-    
-                #tri {
-                    position: absolute;
-                    z-index: 0;
-                    width: 103px;
-                    height: 103px;
-                }
-    
-                .container__triple {
                     display: flex;
+                    height: 32px;
+                    width: 32px;
+                    background-color: rgba(23,67,88,0.5);
+                    position: absolute;
                     align-items: center;
                     justify-content: center;
-                    width: 32px;
-                    height: 32px;
-                    background-color: rgba(black, 0.5);
-                    position: absolute;
-                    z-index: 1;
-                    margin-top: 71px;
-                    margin-left: 71px;
+                    margin-left: 96px;
+                    margin-top: 160px;
     
-                    #pad {
-                        width: 16px;
-                        height: 16px;
+                    #svg2 {
                         z-index: 1;
+                        height: 16px;
+                        width: 16px;
                     }
                 }
             }
         }
     }
     
-    #daystodie {
-        grid-area: daystodie;
-    }
+    .long__cards {
     
+        .long__car {
+            display: flex;
+            flex-direction: row;
+            max-width: 375px;
+            height: auto;
+            gap: 220px;
+        }
     
-    #plague {
-        grid-area: plague;
-    }
-    
-    
-    #ageof2 {
-        grid-area: ageof2;
-    }
-    
-    
-    #amncoll {
-        grid-area: amncoll;
-    }
-    
-    
-    #amnreb {
-        grid-area: amnreb;
-    }
-    
-    
-    #amntheb {
-        grid-area: amntheb;
-    }
-    
-    
-    #among {
-        grid-area: among;
-    }
-    
-    
-    #ante {
-        grid-area: ante;
-    }
-    
-    
-    #araga {
-        grid-area: araga;
-    }
-    
-    .show__gamelist {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #1a1b1e;
-        padding-bottom: 35px;
-    
-        .display__button {
-            width: 288px;
-            height: 40px;
-            text-align: center;
+        .lcards__titles {
             color: white;
-            background-color: #2d3036;
-            border: none;
-            border-radius: 5px;
+            font-family: 'Roboto' sans-serif;
+            padding-left: 16px;
+
+            .notavailable__soon {
+                color: white;
+                font-size: 19px;
+                padding-bottom: 20px;
+            }
+        }
+    
+        .l__card {
+            width: 100%;
+            height: auto;
+            position: relative;
+            padding-left: 16px;
+    
+            #card2 {
+                height: 156px;
+                width: 280px;
+                position: absolute;
+                z-index: 0;
+                border-radius: 5px;
+            }
+    
+            #svg {
+                z-index: 1;
+                position: absolute;
+                height: 16.49px;
+                width: 26.38px;
+                margin-top: 130px;
+                margin-left: 10px;
+            }
+        }
+    }
+    
+    .genres {
+        max-width: 375px;
+        height: auto;
+        padding-top: 180px;
+        background: #1a1b1e;
+    
+        .genres__titles {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-family: 'Roboto' sans-serif;
+    
+            .gene {
+                padding-left: 16px;
+                font-size: 19px;
+                padding-bottom: 20px;
+            }
+        }
+    
+        .genres__buttons {
+            display: grid;
+            grid-template-areas: 
+            "indie forfamily"
+            "shooting action"
+            "brawler strategy"
+            "simulator rpg";
+            gap: 15px;
+            max-width: 375px;
+            padding-left: 16px;
+    
+            .gen__button {
+                width: 163.5px;
+                height: 96px;
+                z-index: 0;
+                position: relative;
+                background-color: #008746;
+                border-radius: 5px;
+    
+                & img {
+                    z-index: 1;
+                    width: 28px;
+                    height: 28px;
+                    position: absolute;
+                    right: 10px;
+                    padding-left: 10px;
+                    padding-top: 10px;
+                }
+    
+                & h5 {
+                    color: white;
+                    font-family: 'Roboto' sans-serif;
+                    font-size: 12px;
+                    padding-top: 50px;
+                    padding-left: 10px;
+                }
+            }
+    
+            .gen__button2 {
+                width: 163.5px;
+                height: 96px;
+                z-index: 0;
+                position: relative;
+                background-color: #008572;
+                border-radius: 5px;
+    
+                & img {
+                    z-index: 1;
+                    width: 28px;
+                    height: 28px;
+                    position: absolute;
+                    right: 10px;
+                    padding-left: 10px;
+                    padding-top: 10px;
+                }
+    
+                & h5 {
+                    color: white;
+                    font-family: 'Roboto' sans-serif;
+                    font-size: 12px;
+                    padding-top: 50px;
+                    padding-left: 10px;
+                }
+            }
+    
+            .gen__button3 {
+                width: 163.5px;
+                height: 96px;
+                z-index: 0;
+                position: relative;
+                background-color: #007c8f;
+                border-radius: 5px;
+    
+                & img {
+                    z-index: 1;
+                    width: 28px;
+                    height: 28px;
+                    position: absolute;
+                    right: 10px;
+                    padding-left: 10px;
+                    padding-top: 10px;
+                }
+    
+                & h5 {
+                    color: white;
+                    font-family: 'Roboto' sans-serif;
+                    font-size: 12px;
+                    padding-top: 60px;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+    
+    .triple__carousel {
+        display: flex;
+        flex-direction: column;
+        max-width: 375px;
+        height: 100vh;
+        background-color: #1a1b1e;
+        padding-top: 20px;
+        padding-left: 16px;
+    
+        .all__games {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            font-family: 'Roboto' sans-serif;
+            padding-bottom: 20px;
+    
+            .show__all {
+                padding-right: 210px;
+                display: none;
+            }
+        }
+    
+        .triple__cards {
+            display: grid;
+            grid-template-areas: 
+            "daystodie plaguetale ageofempire"
+            "amncoll amnreb amntheb"
+            "among ante araga";
+            flex: 1;
+            gap: 110px 10px;
+            max-width: 375px;
+            height: 100vh;
+    
+            .tri__card {
+                position: relative;
+    
+                #tri {
+                    position: absolute;
+                    z-index: 0;
+                    width: 103.66px;
+                    height: 103.66px;
+                }
+                .container__triple {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 35px;
+                    height: 35px;
+                    background-color: rgba(black, 0.5);
+                    position: absolute;
+                    z-index: 1;
+                    margin-top: 70px;
+                    margin-left: 70px;
+                }
+    
+                #pad {
+                    width: 20px;
+                    height: 20px;
+                    z-index: 1;
+                }
+            }
+        }
+    
+        .show__gamelist {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 20px;
+    
+            .display__button {
+                width: 270px;
+                height: 40px;
+                text-align: center;
+                color: white;
+                background-color: #2d3036;
+                border: none;
+                border-radius: 5px;
+            }
         }
     }
     
     .footer {
         background-color: black;
-        max-width: 375px;
+        width: 100%;
         display: flex;
         flex-direction: column;
     
         .footer__container {
             display: flex;
             flex-direction: column;
-            padding-top: 15px;
-            padding-left: 15px;
+            padding-top: 45px;
+            padding-left: 30px;
             padding-right: 95px;
     
             & h4 {
@@ -1332,10 +1395,18 @@ body {
     .under__footer {
     
         .language {
-            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+            margin-top: 15px;
+
+            #cali {
+                width: 33px;
+                height: 16px;
+            }
     
             #globe {
-                width: 24px;
+                width: 20px;
                 height: 20px;
                 padding-right: 8px;
             }
@@ -1345,24 +1416,18 @@ body {
                 color: lightgrey;
                 font-size: 13px;
                 text-align: center;
-                padding-right: 10px;
-            }
-    
-            #cali {
-                padding-top: 15px;
+                padding-right: 65px;
             }
         }
     
         .cookies__contacts {
-            padding-top: 30px;
-            padding-left: 15px;
-            padding-bottom: 10px;
-    
+            padding-left: 16px;
+            padding-bottom: 20px;
             & a {
                 text-decoration: none;
                 color: lightgrey;
-                font-size: 11px;
-                padding-right: 10px;
+                font-size: 13px;
+                padding-right: 12px;
             }
     
             & a:hover {
@@ -1376,7 +1441,68 @@ body {
             text-decoration: underline;
         }
     }
-    
 }
-  
 
+#indie {
+    grid-area: indie;
+}
+
+#forfamily {
+    grid-area: forfamily;
+}
+
+#shooting {
+    grid-area: shooting;
+}
+
+#action {
+    grid-area: action;
+}
+
+#brawler {
+    grid-area: brawler;
+}
+
+#strategy {
+    grid-area: strategy;
+}
+
+#simulator {
+    grid-area: simulator;
+}
+
+#rpg {
+    grid-area: rpg;
+}
+
+#daystodie {
+    grid-area: daystodie;
+}
+
+#plaguetale {
+    grid-area: plaguetale;
+}
+
+#ageofempire {
+    grid-area: ageofempire;
+}
+
+#amncoll {
+    grid-area: amncoll;
+}
+
+#amnreb {
+    grid-area: amnreb;
+}
+
+#amntheb {
+    grid-area: amntheb;
+}
+
+#among {
+    grid-area: among;
+}
+
+#ante {
+    grid-area: ante;
+}
